@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        table,
+        th,
+        td {
+          border: 1px solid;
+          border-color: #aaaaaa;
+          border-collapse: collapse;
+     
+        }
+        .fit{
+            padding:0 23px 0 23px ;
+        }
+        table{
+            background-color: #fdfdfd;
+            width: 100%;
+            height: 60vh;
+        }
+        tr:nth-child(even){
+            background-color:#f3f3f3;
+        }
+        th{
+           background-color:#e5e4e4 ; 
+           text-align: center;
+           font-weight:600;
+           
+        }
+        .blue{
+            color: blue;
+            text-decoration: underline;
+        }
+        .heading{
+            font-size: xx-large;
+            font-weight: 900;
+        }
+        .sidedark{
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+        }
+        .doborder{
+            border-bottom: 2px solid black;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+        }
+        .upborder{
+            border-top: 2px solid black;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+        }
+        td{
+            text-align: center;
+        }
+        caption{
+            padding-bottom: 10px;
+        }
+        .col{
+            background-color:#f3f3f3;
+        }
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+       
+        </style>
+</head>
+<body>
+    <div>
+        <h1 class="heading">Planets Data</h1>
+        <table>
+            <caption>
+                Data about the planets of our solar system(Planetary facts taken from <span class="blue">NASAs planetary facts sheet-Metric</span>)
+              </caption>
+            <tr>
+            <th colspan="2" class="col"></th>
+            <th class="upborder fit">Names</th>
+            <th class="fit">Mass<br>(10<sup>24</sup>kg)</th>
+            <th  class="fit">Diameter<br>(km)</th>
+            <th  class="fit">Density<br>(kg/m<sup>3</sup>)</th>
+            <th  class="fit">Gravity<br>(m/s<sup>2</sup>)</th>
+            <th>Length of day<br>(hours)</th>
+            <th>Distance from Sun<br>(10<sup>6</sup>km)</th>
+            <th>Mean temperature<br> (&#8451)</th>
+            <th>Number of moons</th>
+            <th colspan="2">Notes</th>
+        </tr>
+        <tr>
+            <th colspan="2" rowspan="4">Terrestrial planets</th>
+            <th class="sidedark">Mercury</th>
+            <td>.330</td>
+            <td>4.879</td>
+            <td>5427</td>
+            <td>3.7</td>
+            <td>4222.6</td>
+            <td>57.9</td>
+            <td>167</td>
+            <td>0</td>
+            <td colspan="2">Closest to the Sun</td>
+        </tr>
+        <tr>
+            <th class="sidedark">Venus</th>
+            <td>4.87</td>
+            <td>12,104</td>
+            <td>5243</td>
+            <td>8.9</td>
+            <td>998</td>
+            <td>8975</td>
+            <td>9.07</td>
+            <td>989</td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <th class="sidedark">Earth</th>
+            <td>4.87</td>
+            <td>12,104</td>
+            <td>5243</td>
+            <td>8.9</td>
+            <td>998</td>
+            <td>8975</td>
+            <td>9.07</td>
+            <td>989</td>
+            <td colspan="2">Our World</td>
+        </tr>
+        <tr>
+            <th class="sidedark">Mars</th>
+            <td>4.87</td>
+            <td>12,104</td>
+            <td>5243</td>
+            <td>8.9</td>
+            <td>998</td>
+            <td>8975</td>
+            <td>9.07</td>
+            <td>989</td>
+            <td colspan="2">The Red Planet</td>
+        </tr>
+        <tr>
+            <th rowspan="4">Jovian planet</th>
+            <th rowspan="2">Gas giants</th>
+            <th class="sidedark">Jupiter</th>
+            <td>4.87</td>
+            <td>12,104</td>
+            <td>5243</td>
+            <td>8.9</td>
+            <td>998</td>
+            <td>8975</td>
+            <td>9.07</td>
+            <td>989</td>
+            <td colspan="2">The largest planet</td>
+        </tr>
+        <tr>
+            <th class="sidedark">Saturn</th>
+            <td>4.87</td>
+            <td>12,104</td>
+            <td>5243</td>
+            <td>8.9</td>
+            <td>998</td>
+            <td>8975</td>
+            <td>9.07</td>
+            <td>989</td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <th rowspan="2">ice giants</th>
+            <th class="sidedark">Uranus</th>
+            <td>4.87</td>
+            <td>12,104</td>
+            <td>5243</td>
+            <td>8.9</td>
+            <td>998</td>
+            <td>8975</td>
+            <td>9.07</td>
+            <td>989</td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <th class="sidedark">Neptune</th>
+            <td>4.87</td>
+            <td>412,104</td>
+            <td>5243</td>
+            <td>8.9</td>
+            <td>998</td>
+            <td>8975</td>
+            <td>9.07</td>
+            <td>989</td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <th  colspan="2">Dwarf Planets</th>
+            <th  class="doborder">pluto</th>
+            <td>4.87</td>
+            <td>12,104</td>
+            <td>5243</td>
+            <td>8.9</td>
+            <td>998</td>
+            <td>8975</td>
+            <td>9.07</td>
+            <td>989</td>
+            <td colspan="2" >Declassified as planet in <br>,but this <span class="blue">remains <br>controversial</span> </td>
+
+        </table>
+    </div>
+</body>
+</html>
