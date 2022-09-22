@@ -18,7 +18,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e6e6e6;
+  background-color: #f2f2f2;
   border: 1px solid #c2c2c2;
 }
 .text {
@@ -30,9 +30,9 @@
   grid-column: 1/5;
   grid-row: 3/7;
   background-color: white;
-  border-bottom: 1px solid #c2c2c2;
-  border-left: 1px solid #c2c2c2;
-  border-right: 1px solid #c2c2c2;
+  border-bottom: 1px solid #d3d3d3;
+  border-left: 1px solid #d3d3d3;
+  border-right: 1px solid #d3d3d3;
 }
 .first {
   grid-column: 1/2;
@@ -47,7 +47,7 @@
   grid-column: 3/4;
 }
 .grey {
-  background-color: #c9c9c9;
+  background-color: #ededed;
   height: 200px;
 }
 .font {
