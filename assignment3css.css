@@ -22,7 +22,10 @@
   border: 1px solid #c2c2c2;
 }
 .text {
+  padding-top: 5px;
+  padding-bottom: 5px;
   display: none;
+  height: fit-content;
 }
 
 .d1 input[type="radio"]:checked + label + div {
@@ -33,6 +36,9 @@
   border-bottom: 1px solid #d3d3d3;
   border-left: 1px solid #d3d3d3;
   border-right: 1px solid #d3d3d3;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-top-right-radius: 7px;
 }
 .first {
   grid-column: 1/2;
@@ -52,4 +58,10 @@
 }
 .font {
   font-size: large;
+  font-weight: bold;
+  padding-left: 6px;
+}
+.fonts {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding-left: 12px;
 }
