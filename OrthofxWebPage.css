@@ -1,0 +1,175 @@
+.LogoImgSize {
+  width: 185px;
+  height: 48px;
+  padding-left: 65px;
+  padding-top: 4px;
+}
+.inline {
+  display: flex;
+}
+
+.toptab {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.upfront {
+  font-family: sans-serif;
+  margin-top: 26px;
+  font-size: large;
+  color: #6e6e6e;
+  font-weight: lighter;
+}
+.candidate {
+  display: flex;
+  border: 2px solid #ee6d57;
+  color: #ee6d57;
+  border-radius: 5px;
+  width: 183px;
+  height: 37px;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 550;
+}
+.FindDoctors {
+  display: flex;
+  border: 2px solid#EE6D57;
+  color: white;
+  background-color: #ee6d57;
+  border-radius: 5px;
+  width: 173px;
+  height: 37px;
+  margin-left: 10px;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 550;
+}
+.righttab {
+  padding-top: 7px;
+  padding-right: 60px;
+}
+.secondTab {
+  background-color: #f8f8f8;
+  height: 61px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dedede;
+}
+.dropdowns {
+  display: flex;
+  padding-left: 80px;
+}
+.DropDownItems {
+  position: relative;
+  padding: 20px 40px 0 0;
+  font-size: medium;
+  font-weight: 550;
+  font-family: sans-serif;
+  color: #4e4d4d;
+  cursor: pointer;
+}
+.SignIn {
+  display: flex;
+  padding-right: 57px;
+}
+.content {
+  display: flex;
+  padding: 70px;
+}
+
+.DoctorImage {
+  height: 538px;
+}
+.DoctorDriven {
+  padding-left: 100px;
+  padding-top: 153px;
+  font-size: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.ClearCut {
+  padding-left: 100px;
+  padding-top: 20px;
+  font-size: large;
+  font-family: sans-serif;
+  color: #6e6e6e;
+}
+.CandidateBlue {
+  margin-left: 100px;
+  margin-top: 60px;
+  display: flex;
+  border: 2px solid #43a0b2;
+  background-color: #43a0b2;
+  color: white;
+  border-radius: 5px;
+  width: 183px;
+  height: 37px;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 550;
+}
+.DropDownContent {
+  margin-top: 24px;
+  background-color: #f8f8f8;
+  width: fit-content;
+  display: none;
+  position: absolute;
+  border: 1px solid #dedede;
+  border-top: 0;
+  font-size: 15px;
+}
+
+#whyOrthofx:hover .DropDownContent {
+  display: block;
+}
+#products:hover .DropDownContent {
+  display: block;
+}
+#pricing:hover .DropDownContent {
+  display: block;
+}
+#treatable:hover .DropDownContent {
+  display: block;
+}
+.atag {
+  padding: 13px;
+  display: block;
+  text-decoration: none;
+  color: black;
+  color: #4e4d4d;
+}
+.CandidateATag {
+  text-decoration: none;
+  color: #ee6d57;
+}
+.DoctorATag {
+  text-decoration: none;
+  color: white;
+}
+#signin:hover .DropDownContent {
+  display: block;
+}
+
+.DropDownContent a:hover {
+  color: #ee6d57;
+}
+.candidate:hover > a {
+  color: #ec9986;
+}
+.FindDoctors:hover {
+  background-color: #ec9986;
+  border: 2px solid #ec9986;
+}
+
+.CandidateBlue:hover {
+  background-color: #72d5e9;
+  border: 2px solid #72d5e9;
+}
+.candidate:hover {
+  border: 2px solid #ec9986;
+}
