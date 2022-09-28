@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "recoleta";
+  src: url("./recoleta-regulardemo.otf") format("opentype");
+}
+
 .LogoImgSize {
   width: 185px;
   height: 48px;
@@ -12,6 +17,7 @@
   height: 60px;
   display: flex;
   justify-content: space-between;
+  background-color: white;
 }
 .upfront {
   font-family: sans-serif;
@@ -82,20 +88,21 @@
 }
 
 .DoctorImage {
-  height: 538px;
+  height: 545px;
 }
 .DoctorDriven {
   padding-left: 100px;
   padding-top: 153px;
-  font-size: 40px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 42px;
+  font-family: "recoleta";
+  font-weight: 900;
 }
 .ClearCut {
   padding-left: 100px;
   padding-top: 20px;
-  font-size: large;
+  font-size: 19px;
   font-family: sans-serif;
-  color: #6e6e6e;
+  color: #404042;
 }
 .CandidateBlue {
   margin-left: 100px;
@@ -137,11 +144,12 @@
   display: block;
 }
 .atag {
-  padding: 13px;
+  padding: 13px 16px 13px 16px;
   display: block;
   text-decoration: none;
-  color: black;
+  color: #404042;
   color: #4e4d4d;
+  white-space: nowrap;
 }
 .CandidateATag {
   text-decoration: none;
@@ -172,4 +180,507 @@
 }
 .candidate:hover {
   border: 2px solid #ec9986;
+}
+.third-grey-tab {
+  height: 120px;
+  background-color: #f8f8f8;
+  display: flex;
+  padding: 0px 300px 0px 300px;
+  align-items: center;
+}
+
+.fix {
+  position: sticky;
+  top: 0px;
+}
+.third-grey-tab-img1 {
+  height: 25px;
+}
+.third-grey-tab-img2 {
+  height: 25px;
+  padding: 0px 60px 0px 60px;
+}
+.third-grey-tab-img3 {
+  height: 50px;
+}
+.third-grey-tab-img4 {
+  padding: 0px 60px 0px 55px;
+  height: 80px;
+}
+.third-grey-tab-img5 {
+  height: 70px;
+}
+.third-grey-tab-img6 {
+  height: 21px;
+  padding: 0px 60px 0px 55px;
+}
+.third-grey-tab-img7 {
+  height: 22px;
+}
+.second-page-start {
+  justify-content: space-between;
+  display: flex;
+  padding-right: 50px;
+  padding-left: 75px;
+  padding-bottom: 50px;
+}
+.clear-aligner {
+  margin: 10px;
+  height: 567px;
+}
+.clear-aligner-right {
+  padding: 227px 0px 0px 75px;
+}
+.orthofx-clear-aligners {
+  font-size: 42px;
+  font-family: "recoleta";
+  padding-bottom: 10px;
+  font-weight: 900;
+}
+.orthofx-clear-aligners-content {
+  font-size: 19px;
+  font-family: sans-serif;
+  color: #404042;
+  line-height: 35px;
+  margin-bottom: 25px;
+}
+.orthofx-clear-left {
+  padding-top: 120px;
+}
+.img-doctor-with-u {
+  height: 705px;
+  padding-right: 10px;
+}
+.spacing {
+  padding-bottom: 25px;
+  font-size: 19px;
+  font-family: sans-serif;
+  color: #404042;
+}
+.FindDoctors2 {
+  display: flex;
+  border: 2px solid#EE6D57;
+  color: white;
+  background-color: #ee6d57;
+  border-radius: 5px;
+  width: 173px;
+  height: 37px;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 550;
+}
+.FindDoctors2:hover {
+  background-color: #ec9986;
+  border: 2px solid #ec9986;
+}
+.icon-size {
+  height: 25px;
+  padding: 5px 15px 0px 0px;
+}
+.section-3 {
+  height: 716px;
+  justify-content: space-between;
+  display: flex;
+}
+.section-3-1 {
+  padding: 76px 152px 76px 76px;
+  background-color: #74c2d1;
+  width: 760px;
+}
+.section-3-1-1 {
+  font-family: "recoleta";
+  font-size: 42px;
+  color: white;
+  padding-bottom: 18px;
+  font-weight: 900;
+}
+.section-3-1-2 {
+  font-family: sans-serif;
+  font-size: 18px;
+  color: white;
+  padding-top: 10px;
+}
+.section3-1-3 {
+  font-weight: 300;
+  line-height: 25px;
+  padding-bottom: 40px;
+}
+.section-3-2 {
+  height: 716px;
+  width: 759px;
+}
+.section-4 {
+  display: flex;
+  padding: 76px;
+  height: 524px;
+}
+.how-it-works {
+  display: flex;
+  border: 2px solid#EE6D57;
+  color: white;
+  background-color: #ee6d57;
+  border-radius: 5px;
+  width: 140px;
+  height: 37px;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 550;
+  margin-top: 25px;
+}
+.how-it-works:hover {
+  background-color: #ec9986;
+  border: 2px solid #ec9986;
+}
+.sec-4-1 {
+  width: 615px;
+  height: 524px;
+}
+.section-4-2 {
+  padding: 50px 0px 50px 100px;
+}
+.sec-4-2-1 {
+  font-size: 42px;
+  font-family: "recoleta";
+  color: black;
+  padding-bottom: 20px;
+  font-weight: 900;
+}
+.content-font {
+  font-family: sans-serif;
+  font-size: 19px;
+  color: #404042;
+  font-weight: lighter;
+  line-height: 30px;
+}
+.sp-1 {
+  color: #f48471;
+}
+.sp-2 {
+  color: #74c2d1;
+}
+.sp-3 {
+  color: #404042;
+}
+.sp-4 {
+  color: #fec112;
+}
+.sec-4-2-2 {
+  padding-bottom: 20px;
+}
+.sec-4-2-3 {
+  padding-bottom: 22px;
+}
+.section-5 {
+  height: 547px;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.section-5-1 {
+  padding: 100px 36px 0px 76px;
+}
+.section-5-2 {
+  height: 547px;
+}
+.sec-6 {
+  padding: 76px 76px 50px 76px;
+}
+.sec-6-1 {
+  font-size: 42px;
+  font-family: "recoleta";
+  color: black;
+  padding-bottom: 20px;
+  font-weight: 900;
+}
+.sec-7 {
+  padding: 0px 76px 70px 76px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.sec-8 {
+  display: flex;
+  height: 484px;
+}
+.sec-8-1 {
+  background-color: #f48471;
+  padding: 0px 50px 0px 76px;
+  height: 484px;
+}
+.sec-8-1-1 {
+  font-family: "recoleta";
+  font-size: 42px;
+  color: white;
+  padding: 80px 0px 40px 0px;
+  font-weight: 900;
+}
+.sec-8-1-2 {
+  font-family: "recoleta";
+  font-size: 19px;
+  color: white;
+  padding-bottom: 30px;
+  font-weight: 700;
+}
+.sec-8-1-3 {
+  font-family: sans-serif;
+  font-size: 19px;
+  color: #ffffff;
+  font-weight: 100;
+  line-height: 30px;
+}
+.pricing {
+  display: flex;
+  color: #ee6d57;
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 5px;
+  width: 183px;
+  height: 37px;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 550;
+  margin: 60px 0px 0px 0px;
+}
+.pricingATag {
+  text-decoration: none;
+  color: #ee6d57;
+}
+.pricing:hover {
+  background-color: #fbe8e4;
+  border: #fbe8e4;
+}
+.img-sock {
+  width: 759px;
+  height: 484px;
+}
+.sec-9 {
+  background-color: #74c2d1;
+  display: flex;
+  height: 567px;
+}
+.sec-9-1 {
+  padding: 85px 76px 30px 76px;
+}
+.sec-9-1-1 {
+  font-family: "recoleta";
+  font-size: 42px;
+  color: white;
+  padding-bottom: 18px;
+  font-weight: 900;
+}
+.sec-9-1-2 {
+  font-family: sans-serif;
+  font-size: 18px;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  line-height: 30px;
+}
+.sec-9-1-3 {
+  font-family: sans-serif;
+  font-size: 18px;
+  color: white;
+  line-height: 30px;
+}
+.img-dualshell {
+  height: 506px;
+  padding-left: 90px;
+}
+.sec-10 {
+  background-color: #74c2d1;
+  padding: 30px 76px 30px 76px;
+}
+.sec-10-1 {
+  font-family: "recoleta";
+  font-size: 42px;
+  color: white;
+  padding-bottom: 30px;
+  font-weight: 900;
+}
+.sec-11 {
+  padding: 120px 76px 115px 76px;
+  display: flex;
+}
+.sec-11-1-1 {
+  font-size: 42px;
+  font-family: "recoleta";
+  color: black;
+  padding-bottom: 20px;
+  font-weight: 900;
+  padding-top: 10px;
+}
+.sec-11-1-2 {
+  font-family: sans-serif;
+  font-size: 19px;
+}
+.sec-11-1-3 {
+  padding-top: 50px;
+  color: #ee6d57;
+  border-bottom: 2px solid #ee6d57;
+  width: fit-content;
+  padding-bottom: 10px;
+  font-family: sans-serif;
+  font-size: 19px;
+}
+.sec-11-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 170px;
+  gap: 70px;
+}
+.sec-11-1-3:hover {
+  color: #f49281;
+  border-color: #f49281;
+}
+.after-img {
+  height: 269px;
+  width: 271px;
+}
+.before {
+  font-size: 19px;
+  font-family: sans-serif;
+  line-height: 40px;
+  color: #404041;
+  font-weight: 100;
+}
+.sec-12 {
+  display: flex;
+  height: max-content;
+  justify-content: space-between;
+}
+.sec-12-1 {
+  background-color: #f48471;
+  padding-left: 76px;
+  width: 759px;
+  padding-top: 100px;
+}
+.sec-12-1-1 {
+  font-family: "recoleta";
+  font-size: 42px;
+  color: white;
+  font-weight: 900;
+}
+.sec-12-1-2 {
+  font-family: sans-serif;
+  font-size: 18px;
+  color: white;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  line-height: 30px;
+}
+.candidate2 {
+  display: flex;
+  border: 2px solid #ffffff;
+  color: #ee6d57;
+  border-radius: 5px;
+  background-color: #ffffff;
+  width: 183px;
+  height: 37px;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 550;
+}
+.sec-12-2 {
+  width: 759px;
+  height: 500px;
+}
+.sec-13 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #f2f5f8;
+  padding-left: 50px;
+  padding-right: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.img-13 {
+  width: 441px;
+  height: 291px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.head-13 {
+  font-family: sans-serif;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  font-weight: 700;
+  color: #404041;
+  padding-left: 15px;
+  line-height: 20px;
+}
+.content-13 {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+  color: #404041;
+  line-height: 25px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+}
+.read-more {
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #ee6d57;
+  padding-bottom: 30px;
+  padding-left: 15px;
+}
+.date-13 {
+  font-family: sans-serif;
+  font-weight: 12px;
+  color: #adadad;
+  border-top: 1px solid #adadad;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+.sec-13-1 {
+  background-color: #ffffff;
+  width: 441px;
+  border-radius: 8px;
+}
+.read-more-1 {
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #ee6d57;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-top: 5px;
+}
+.sec-14-1 {
+  font-family: "recoleta";
+  font-size: 42px;
+  font-weight: 900;
+  color: #404041;
+  margin-bottom: 25px;
+}
+.cont-14 {
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 100;
+  padding-bottom: 20px;
+  line-height: 25px;
+  color: #404041;
+}
+.head-14 {
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: 500;
+  color: #404041;
+  padding-bottom: 7px;
+}
+.sec-14 {
+  padding: 40px;
 }
