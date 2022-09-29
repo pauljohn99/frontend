@@ -14,6 +14,9 @@
       #content {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(10, minmax(200px, auto));
+        column-gap: 20px;
+        row-gap: 10px;
         max-width: 960px;
         margin: 0 auto;
       }
@@ -23,7 +26,6 @@
       }
       #content div:nth-child(even) {
         background: #777;
-        padding: 30px;
       }
     </style>
   </head>
