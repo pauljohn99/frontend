@@ -750,6 +750,8 @@
   position: relative;
   padding-left: 25px;
   font-size: larger;
+  display: block;
+  margin-top: 20px;
 }
 .subs {
   height: 48px;
@@ -760,6 +762,8 @@
   border: 1px solid #404042;
   position: absolute;
   right: 170px;
+  display: block;
+  margin-top: 20px;
 }
 .sec-16 {
   background-color: #ececec;
