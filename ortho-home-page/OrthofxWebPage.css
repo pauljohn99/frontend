@@ -226,6 +226,13 @@
   padding-top: 30px;
   align-items: center;
 }
+.sec-page-start {
+  display: flex;
+  padding-right: 60px;
+  padding-left: 65px;
+  padding-bottom: 30px;
+  background-color: #f8f8f8;
+}
 .clear-aligner {
   margin: 10px;
   height: 567px;
