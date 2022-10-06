@@ -21,6 +21,18 @@ export class CreateEmployeeComponent implements OnInit {
       }),
     });
   }
+  onLoadDataClick(): void {
+    this.employeeForm.patchValue({
+      fullName: 'paul',
+      email: 'paul@gmail.com',
+      skills: {
+        skillName: 'C#',
+        experienceInYears: 9,
+        proficiency: 'beginner',
+      },
+    });
+  }
+
   onSubmit(): void {
     console.log(this.employeeForm.controls['fullName'].touched);
     console.log(this.employeeForm.get('fullName')?.value);
