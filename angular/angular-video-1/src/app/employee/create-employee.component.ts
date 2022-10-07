@@ -28,22 +28,20 @@ export class CreateEmployeeComponent implements OnInit {
         proficiency: ['beginner'],
       }),
     });
-    this.employeeForm
-      .get('fullName')
-      ?.valueChanges.subscribe((value: string) => {
-        this.fullNameLength = value.length;
-      });
   }
-  onLoadDataClick(): void {
-    this.employeeForm.patchValue({
-      fullName: 'paul',
-      email: 'paul@gmail.com',
-      skills: {
-        skillName: 'C#',
-        experienceInYears: 9,
-        proficiency: 'beginner',
-      },
+  logKeyValuePairs(group: FormGroup): void {
+    Object.keys(group.controls).forEach((key: string) => {
+      const abstractControl = group.get(key);
+      if (abstractControl instanceof FormGroup) {
+        this.logKeyValuePairs(abstractControl);
+      } else {
+        console.log('key=', key, 'value =', abstractControl?.value);
+      }
     });
+  }
+
+  onLoadDataClick(): void {
+    this.logKeyValuePairs(this.employeeForm);
   }
 
   onSubmit(): void {
