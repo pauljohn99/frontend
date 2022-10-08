@@ -17,6 +17,9 @@ export class CreateEmployeeComponent implements OnInit {
     email: {
       required: 'Email is required.',
     },
+    phone: {
+      required: 'phone is required.',
+    },
     skillName: {
       required: 'Skill Name is required.',
     },
@@ -31,6 +34,7 @@ export class CreateEmployeeComponent implements OnInit {
   formErrors = {
     fullName: '',
     email: '',
+    phone: '',
     skillName: '',
     experienceInYears: '',
     proficiency: '',
@@ -48,17 +52,37 @@ export class CreateEmployeeComponent implements OnInit {
           Validators.maxLength(10),
         ],
       ],
+      contactPreference: ['email'],
       email: ['', Validators.required],
+      phone: [''],
       skills: this.fb.group({
         skillName: ['', Validators.required],
         experienceInYears: ['', Validators.required],
         proficiency: ['', Validators.required],
       }),
     });
+
+    (this.employeeForm as any)
+      .get('contactPreference')
+      .valueChanges.subscribe((data: string) => {
+        this.onContactPrefernceChange(data);
+      });
+
     this.employeeForm.valueChanges.subscribe((data) => {
       this.logValidationErrors(this.employeeForm);
     });
   }
+
+  onContactPrefernceChange(selectedValue: string) {
+    const phoneControl = this.employeeForm.get('phone');
+    if (selectedValue === 'phone') {
+      phoneControl?.setValidators(Validators.required);
+    } else {
+      phoneControl?.clearValidators();
+    }
+    phoneControl?.updateValueAndValidity();
+  }
+
   logValidationErrors(group: FormGroup = this.employeeForm): void {
     Object.keys(group.controls).forEach((key: string) => {
       const abstractControl = group.get(key);
