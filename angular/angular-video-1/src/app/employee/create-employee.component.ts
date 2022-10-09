@@ -107,6 +107,10 @@ export class CreateEmployeeComponent implements OnInit {
     });
   }
 
+  get skills(): FormArray {
+    return this.employeeForm.get('skills') as FormArray;
+  }
+
   onContactPrefernceChange(selectedValue: string) {
     const phoneControl = this.employeeForm.get('phone');
     if (selectedValue === 'phone') {

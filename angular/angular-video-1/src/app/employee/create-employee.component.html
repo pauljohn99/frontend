@@ -133,8 +133,11 @@
           </div>
         </div>
 
-        <div formArrayName="skills">
-          <div [formGroupName]="0">
+        <div
+          formArrayName="skills"
+          *ngFor="let skill of skills.controls; let i = index"
+        >
+          <div [formGroupName]="i">
             <div
               class="form-group"
               [ngClass]="{
