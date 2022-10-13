@@ -1,20 +1,51 @@
 <div class="navbar1">
-  <nav class="navbar2">
-    <div>
-      <a routerLinkActive="active" routerLink="elixir">elixir</a>
-    </div>
-    <div>
-      <a routerLinkActive="active" routerLink="ingredients">ingredient</a>
-    </div>
-    <div>
-      <a routerLinkActive="active" routerLink="spell">spell</a>
-    </div>
-    <div>
-      <a routerLinkActive="active" routerLink="wizard">wizard</a>
-    </div>
-    <div>
-      <a routerLinkActive="active" routerLink="house">house</a>
-    </div>
-  </nav>
-  <router-outlet></router-outlet>
+  <div class="nav">
+    <h2>Wizard-World</h2>
+    <nav class="navbar2">
+      <div class="nav1">
+        <a routerLinkActive="active" routerLink="elixir"
+          ><div class="image">
+            <img src="../assets/images/elixir.png" alt="" />
+          </div>
+          <p>elixir</p></a
+        >
+      </div>
+      <div class="nav1">
+        <a routerLinkActive="active" routerLink="ingredients"
+          ><div class="image">
+            <img src="../assets/images/ingredients.jpg" alt="" />
+          </div>
+          <p>ingredient</p></a
+        >
+      </div>
+      <div class="nav1">
+        <a routerLinkActive="active" routerLink="spell">
+          <div class="image">
+            <img src="../assets/images/spells.png" alt="" />
+          </div>
+          <p>spell</p></a
+        >
+      </div>
+      <div class="nav1">
+        <a routerLinkActive="active" routerLink="wizard">
+          <div class="image">
+            <img src="../assets/images/wizard.jpg" alt="" />
+          </div>
+          <p>wizard</p></a
+        >
+      </div>
+      <div class="nav1">
+        <a routerLinkActive="active" routerLink="house"
+          ><div class="image">
+            <img src="../assets/images/house.jpg" alt="" />
+          </div>
+          <p>house</p></a
+        >
+      </div>
+    </nav>
+  </div>
+
+  <div class="outlet">
+    <router-outlet></router-outlet>
+  </div>
 </div>

@@ -1,17 +1,75 @@
 a {
-  font-size: large;
-  color: black;
   text-decoration: none;
+  width: 100%;
+}
+.outlet::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar1 {
+  background-color: #252a41;
+  padding: 8px 8px 8px 8px;
   display: flex;
-  border: 2px solid blue;
-  background-color: aqua;
-  padding: 0px 50px;
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
 }
 .navbar2 {
-  display: flex;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 30px 0 30px;
+  position: relative;
 }
-.navbar1 {
-  background-color: antiquewhite;
-  padding: 20px 90px;
+.nav1 {
+  padding: 30px 0px;
+}
+
+img {
+  height: 90px;
+  width: 90px;
+  border-radius: 20px;
+}
+h2 {
+  color: white;
+  padding-top: 100px;
+  font-family: sans-serif;
+  padding-bottom: 70px;
+  padding-left: 80px;
+}
+.outlet {
+  background-color: white;
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+  overflow-y: auto;
+  margin-right: 10px;
+}
+.nav {
+  height: 100%;
+  width: 80vw;
+  position: relative;
+}
+p {
+  text-align: center;
+  color: #dedcdc;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.image {
+  display: flex;
+  justify-content: center;
+}
+/* .elix {
+  padding: 4px;
+  border: 2px solid #252a41;
+}
+.elix:active {
+  padding: 4px;
+  border: 2px solid red;
+} */
+.active {
+  padding: 4px;
+  border: 2px solid red;
 }

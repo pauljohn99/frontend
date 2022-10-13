@@ -19,30 +19,35 @@ export class ListPageComponent implements OnInit {
     public listservice: ListingService,
     private _router: Router
   ) {}
-
+  i?: number;
   ngOnInit(): void {
     this.route.data.subscribe((item) => {
       if (item['item'] === 'elixir') {
         this.listservice.getElixir().subscribe((list) => {
           this.listservice.elixir = list;
           console.log(this.listservice.elixir);
+          this.i = 1;
         });
       } else if (item['item'] === 'spell') {
         this.listservice
           .getSpell()
           .subscribe((list) => (this.listservice.spell = list));
+        this.i = 2;
       } else if (item['item'] === 'ingredients') {
         this.listservice
           .getIngredients()
           .subscribe((list) => (this.listservice.ingredient = list));
+        this.i = 3;
       } else if (item['item'] === 'wizard') {
         this.listservice
           .getWizard()
           .subscribe((list) => (this.listservice.wizard = list));
+        this.i = 4;
       } else if (item['item'] === 'house') {
         this.listservice
           .getHouse()
           .subscribe((list) => (this.listservice.house = list));
+        this.i = 5;
       }
     });
   }

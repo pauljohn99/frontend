@@ -1,6 +1,14 @@
 <div *ngIf="this.i === 1">
   <p>{{ elixir?.name }}</p>
-  <p>{{ elixir?.effect }}</p>
+  <p>Effect: {{ elixir?.effect }}</p>
+  <p>{{ elixir?.sideEffects }}</p>
+  <p>{{ elixir?.characteristics }}</p>
+  <p>{{ elixir?.difficulty }}</p>
+  <p>{{ elixir?.manufacturer }}</p>
+  <p *ngFor="let item of ing">{{ this.item.name }}</p>
+  <p *ngFor="let item of invent">
+    {{ this.item.firstName }} {{ this.item.lastName }}
+  </p>
 </div>
 <div *ngIf="i === 2">
   <div *ngFor="let item of wElix">{{ this.item.name }}</div>

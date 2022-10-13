@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { IElixir } from '../interfaces/IElixir';
 import { IHouse } from '../interfaces/IHouse';
 import { IIngredients } from '../interfaces/IIngredients';
+import { IInventor } from '../interfaces/IInventor';
 import { ISpells } from '../interfaces/ISpells';
 import { Elixir, IWizards } from '../interfaces/IWizards';
 import { ListingService } from '../listing.service';
@@ -22,6 +23,8 @@ export class DetailsPageComponent implements OnInit {
   house?: IHouse;
   wizId: any;
   wElix?: Elixir[];
+  ing?: IIngredients[];
+  invent?: IInventor[];
 
   ngOnInit(): void {
     this.route.paramMap.subscribe((params) => {
@@ -33,6 +36,8 @@ export class DetailsPageComponent implements OnInit {
         this.elixir = this.listing.elixir?.filter(
           (elix) => elix.id == this.wizId
         )[0];
+        this.ing = this.elixir.ingredients;
+        this.invent = this.elixir.inventors;
       } else if (item['item'] === 'wizard') {
         this.i = 2;
         this.wizard = this.listing.wizard?.filter((w) => w.id == this.wizId)[0];
