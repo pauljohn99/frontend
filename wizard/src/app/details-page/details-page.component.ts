@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Head } from 'rxjs';
 import { IElixir } from '../interfaces/IElixir';
-import { IHouse } from '../interfaces/IHouse';
+import { Heads, IHouse, Trait } from '../interfaces/IHouse';
 import { IIngredients } from '../interfaces/IIngredients';
 import { IInventor } from '../interfaces/IInventor';
 import { ISpells } from '../interfaces/ISpells';
@@ -25,7 +26,8 @@ export class DetailsPageComponent implements OnInit {
   wElix?: Elixir[];
   ing?: IIngredients[];
   invent?: IInventor[];
-
+  trait?: Trait[];
+  head?: Heads[];
   ngOnInit(): void {
     this.route.paramMap.subscribe((params) => {
       this.wizId = params.get('id');
@@ -53,6 +55,8 @@ export class DetailsPageComponent implements OnInit {
       } else if (item['item'] === 'house') {
         this.i = 5;
         this.house = this.listing.house?.filter((w) => w.id == this.wizId)[0];
+        this.trait = this.house?.traits;
+        this.head = this.house?.heads;
       }
     });
   }

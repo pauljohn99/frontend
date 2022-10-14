@@ -1,5 +1,6 @@
 <div *ngIf="this.i == 1">
   <div class="elix">
+    <h2 class="ElixH1">Elixirs</h2>
     <div
       class="elix1"
       *ngFor="let elixirs of listservice.elixir"
@@ -10,28 +11,50 @@
   </div>
 </div>
 <div *ngIf="this.i == 2">
-  <div
-    *ngFor="let ingredients of listservice.ingredient"
-    (click)="clickIngredient(ingredients.id)"
-  >
-    <div>{{ ingredients.name }}</div>
+  <div class="elix">
+    <h2 class="ElixH2">Ingredients</h2>
+    <div
+      class="ing"
+      *ngFor="let ingredients of listservice.ingredient"
+      (click)="clickIngredient(ingredients.id)"
+    >
+      <div>{{ ingredients.name }}</div>
+    </div>
   </div>
 </div>
 <div *ngIf="this.i == 3">
-  <div *ngFor="let spells of listservice.spell" (click)="clickSpell(spells.id)">
-    <div>{{ spells.name }}</div>
+  <div class="elix">
+    <h2 class="ElixH3">Spells</h2>
+    <div
+      class="spel"
+      *ngFor="let spells of listservice.spell"
+      (click)="clickSpell(spells.id)"
+    >
+      <div>{{ spells.name }}</div>
+    </div>
   </div>
 </div>
 <div *ngIf="this.i == 4">
-  <div
-    *ngFor="let wizards of listservice.wizard"
-    (click)="clickWizard(wizards.id)"
-  >
-    <div>{{ wizards.firstName + wizards.lastName }}</div>
+  <div class="elix">
+    <h2 class="ElixH4">Wizards</h2>
+    <div
+      class="wiz"
+      *ngFor="let wizards of listservice.wizard"
+      (click)="clickWizard(wizards.id)"
+    >
+      <div>{{ wizards.firstName + wizards.lastName }}</div>
+    </div>
   </div>
 </div>
 <div *ngIf="this.i == 5">
-  <div *ngFor="let houses of listservice.house" (click)="clickHouse(houses.id)">
-    <div>{{ houses.name }}</div>
+  <div class="elix">
+    <h2 class="ElixH5">House</h2>
+    <div
+      class="house"
+      *ngFor="let houses of listservice.house"
+      (click)="clickHouse(houses.id)"
+    >
+      <div>{{ houses.name }}</div>
+    </div>
   </div>
 </div>

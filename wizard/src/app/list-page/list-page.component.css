@@ -1,9 +1,121 @@
 .elix {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   background-color: #fff;
   border-radius: 10px;
 }
 .elix1 {
-  color: black;
+  color: #343434;
+  font-family: sans-serif;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.ElixH3 {
+  font-family: Bluu Next, serif;
+  grid-column: 1/3;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 30px;
+  font-size: 30px;
+  background-color: #0d611e;
+  margin: 0;
+  margin-bottom: 40px;
+  color: #fff;
+}
+.elix1:hover {
+  color: rgb(227, 28, 28);
+  cursor: pointer;
+}
+.ing {
+  color: #343434;
+  font-family: sans-serif;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.ing:hover {
+  color: #b3c027;
+  cursor: pointer;
+}
+.spel {
+  color: #343434;
+  font-family: sans-serif;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.spel:hover {
+  color: #499332;
+  cursor: pointer;
+}
+.wiz {
+  color: #343434;
+  font-family: sans-serif;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.wiz:hover {
+  color: #7f2bd8;
+  cursor: pointer;
+}
+.house {
+  color: #343434;
+  font-family: sans-serif;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.house:hover {
+  cursor: pointer;
+  color: #7d6f1f;
+}
+.ElixH1 {
+  font-family: Bluu Next, serif;
+  grid-column: 1/3;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 30px;
+  font-size: 30px;
+  background-color: #d20d38;
+  margin: 0;
+  margin-bottom: 40px;
+  color: #fff;
+}
+.ElixH2 {
+  font-family: Bluu Next, serif;
+  grid-column: 1/3;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 30px;
+  font-size: 30px;
+  background-color: #b3c027;
+  margin: 0;
+  margin-bottom: 40px;
+  color: #fff;
+}
+.ElixH4 {
+  font-family: Bluu Next, serif;
+  grid-column: 1/3;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 30px;
+  font-size: 30px;
+  background-color: #330661;
+  margin: 0;
+  margin-bottom: 40px;
+  color: #fff;
+}
+.ElixH5 {
+  font-family: Bluu Next, serif;
+  grid-column: 1/3;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 30px;
+  font-size: 30px;
+  background-color: #d4af37;
+  margin: 0;
+  margin-bottom: 40px;
+  color: #fff;
 }

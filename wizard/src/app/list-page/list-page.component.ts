@@ -32,12 +32,12 @@ export class ListPageComponent implements OnInit {
         this.listservice
           .getSpell()
           .subscribe((list) => (this.listservice.spell = list));
-        this.i = 2;
+        this.i = 3;
       } else if (item['item'] === 'ingredients') {
         this.listservice
           .getIngredients()
           .subscribe((list) => (this.listservice.ingredient = list));
-        this.i = 3;
+        this.i = 2;
       } else if (item['item'] === 'wizard') {
         this.listservice
           .getWizard()

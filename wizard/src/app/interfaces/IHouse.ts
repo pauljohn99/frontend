@@ -1,4 +1,4 @@
-export interface Head {
+export interface Heads {
   id: string;
   firstName: string;
   lastName: string;
@@ -18,6 +18,6 @@ export interface IHouse {
   element: string;
   ghost: string;
   commonRoom: string;
-  heads: Head[];
+  heads: Heads[];
   traits: Trait[];
 }

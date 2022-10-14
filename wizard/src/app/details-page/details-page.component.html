@@ -1,15 +1,197 @@
 <div *ngIf="this.i === 1">
-  <p>{{ elixir?.name }}</p>
-  <p>Effect: {{ elixir?.effect }}</p>
-  <p>{{ elixir?.sideEffects }}</p>
-  <p>{{ elixir?.characteristics }}</p>
-  <p>{{ elixir?.difficulty }}</p>
-  <p>{{ elixir?.manufacturer }}</p>
-  <p *ngFor="let item of ing">{{ this.item.name }}</p>
-  <p *ngFor="let item of invent">
-    {{ this.item.firstName }} {{ this.item.lastName }}
-  </p>
+  <div class="head1">
+    <div class="head2">Elixir</div>
+    <div class="mainHead">{{ elixir?.name }}</div>
+  </div>
+  <div class="white">
+    <div class="flexs">
+      <div class="subHead">
+        <div>Effect</div>
+        <div>:</div>
+      </div>
+      <div></div>
+      <div class="property">{{ elixir?.effect }}</div>
+    </div>
+    <div class="flexs">
+      <div class="subHead">
+        <div>Side Effect</div>
+        <div>:</div>
+      </div>
+      <div class="property">{{ elixir?.sideEffects }}</div>
+    </div>
+    <div class="flexs">
+      <div class="subHead">
+        <div>Characteristics</div>
+        <div>:</div>
+      </div>
+      <p class="property">{{ elixir?.characteristics }}</p>
+    </div>
+    <div class="flexs">
+      <div class="subHead">
+        <div>Difficulty</div>
+        <div>:</div>
+      </div>
+      <p class="property">{{ elixir?.difficulty }}</p>
+    </div>
+    <div class="flexs">
+      <div class="subHead">
+        <div>Manufacturer</div>
+        <div>:</div>
+      </div>
+      <p class="property">{{ elixir?.manufacturer }}</p>
+    </div>
+    <div class="flexs">
+      <div class="subHead">
+        <div>Ingredients</div>
+        <div>:</div>
+      </div>
+      <div>
+        <div *ngFor="let item of ing" class="property">
+          {{ this.item.name }}
+        </div>
+      </div>
+    </div>
+    <div class="flexs">
+      <div class="subHead">
+        <div>Inventor</div>
+        <div>:</div>
+      </div>
+      <p *ngFor="let item of invent" class="property">
+        {{ this.item.firstName }} {{ this.item.lastName }}
+      </p>
+    </div>
+  </div>
 </div>
 <div *ngIf="i === 2">
-  <div *ngFor="let item of wElix">{{ this.item.name }}</div>
+  <div class="headW">
+    <div class="head2">Wizard</div>
+    <div class="mainHead">{{ wizard?.firstName }} {{ wizard?.lastName }}</div>
+  </div>
+  <div class="flexs">
+    <div class="subHead">
+      <div>Elixirs</div>
+      <div>:</div>
+    </div>
+
+    <div *ngFor="let item of wElix" class="property">{{ this.item.name }}</div>
+  </div>
+</div>
+<div *ngIf="i == 4">
+  <div class="headS">
+    <div class="head2">Spell</div>
+    <div class="mainHead">{{ spell?.name }}</div>
+  </div>
+  <div class="flexs">
+    <div class="subHead">
+      <div>Incantation</div>
+      <div>:</div>
+    </div>
+    <div class="property">{{ spell?.incantation }}</div>
+  </div>
+  <div class="flexs">
+    <div class="subHead">
+      <div>Effect</div>
+      <div>:</div>
+    </div>
+    <div class="property">{{ spell?.effect }}</div>
+  </div>
+  <div class="flexs">
+    <div class="subHead">
+      <div>canBeVerbal</div>
+      <div>:</div>
+    </div>
+    <div class="property">{{ spell?.canBeVerbal }}</div>
+  </div>
+  <div class="flexs">
+    <div class="subHead">
+      <div>Type</div>
+      <div>:</div>
+    </div>
+    <div class="property">{{ spell?.type }}</div>
+  </div>
+  <div class="flexs">
+    <div class="subHead">
+      <div>Light</div>
+      <div>:</div>
+    </div>
+    <div class="property">{{ spell?.light }}</div>
+  </div>
+  <div class="flexs">
+    <div class="subHead">
+      <div>Creator</div>
+      <div>:</div>
+    </div>
+    <div class="property">{{ spell?.creator }}</div>
+  </div>
+</div>
+<div *ngIf="i === 5">
+  <div class="headH">
+    <div class="head2">House</div>
+    <div class="mainHead">{{ house?.name }}</div>
+  </div>
+  <div class="flexs">
+    <div class="subHead">
+      <div>House Colours</div>
+      <div>:</div>
+    </div>
+    <div class="property">{{ house?.houseColours }}</div>
+  </div>
+  <div class="flexs">
+    <div class="subHead">
+      <div>Founder</div>
+      <div>:</div>
+    </div>
+    <div class="property">{{ house?.founder }}</div>
+  </div>
+  <div class="flexs">
+    <div class="subHead">
+      <div>Animal</div>
+      <div>:</div>
+    </div>
+    <div class="property">{{ house?.animal }}</div>
+  </div>
+  <div class="flexs">
+    <div class="subHead">
+      <div>Element</div>
+      <div>:</div>
+    </div>
+    <div class="property">{{ house?.element }}</div>
+  </div>
+  <div class="flexs">
+    <div class="subHead">
+      <div>Ghost</div>
+      <div>:</div>
+    </div>
+    <div class="property">{{ house?.ghost }}</div>
+  </div>
+  <div class="flexs">
+    <div class="subHead">
+      <div>Common Room</div>
+      <div>:</div>
+    </div>
+    <div class="property">{{ house?.commonRoom }}</div>
+  </div>
+  <div class="flexs">
+    <div class="subHead">
+      <div>Heads</div>
+      <div>:</div>
+    </div>
+    <div>
+      <div *ngFor="let item of head" class="property">
+        {{ this.item.firstName }} {{ this.item.lastName }}
+      </div>
+    </div>
+  </div>
+
+  <div class="flexs">
+    <div class="subHead">
+      <div>Traits</div>
+      <div>:</div>
+    </div>
+    <div>
+      <div *ngFor="let item of trait" class="property">
+        {{ this.item.name }}
+      </div>
+    </div>
+  </div>
 </div>
