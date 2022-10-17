@@ -22,6 +22,8 @@
   margin: 0;
   margin-bottom: 40px;
   color: #fff;
+  position: sticky;
+  top: 0%;
 }
 .elix1:hover {
   color: rgb(227, 28, 28);
@@ -82,6 +84,8 @@
   margin: 0;
   margin-bottom: 40px;
   color: #fff;
+  position: sticky;
+  top: 0%;
 }
 .ElixH2 {
   font-family: Bluu Next, serif;
@@ -94,6 +98,8 @@
   margin: 0;
   margin-bottom: 40px;
   color: #fff;
+  position: sticky;
+  top: 0%;
 }
 .ElixH4 {
   font-family: Bluu Next, serif;
@@ -106,6 +112,8 @@
   margin: 0;
   margin-bottom: 40px;
   color: #fff;
+  position: sticky;
+  top: 0%;
 }
 .ElixH5 {
   font-family: Bluu Next, serif;
@@ -118,4 +126,6 @@
   margin: 0;
   margin-bottom: 40px;
   color: #fff;
+  position: sticky;
+  top: 0%;
 }

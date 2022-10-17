@@ -20,11 +20,11 @@ const routes: Routes = [
     component: DetailsPageComponent,
     data: { item: 'elixir' },
   },
-  {
-    path: 'ingredient/:id',
-    component: DetailsPageComponent,
-    data: { item: 'ingredients' },
-  },
+  // {
+  //   path: 'ingredient/:id',
+  //   component: DetailsPageComponent,
+  //   data: { item: 'ingredients' },
+  // },
   {
     path: 'wizard/:id',
     component: DetailsPageComponent,
