@@ -42,7 +42,12 @@
       *ngFor="let wizards of listservice.wizard"
       (click)="clickWizard(wizards.id)"
     >
-      <div>{{ wizards.firstName + wizards.lastName }}</div>
+      <div class="flex">
+        <div class="spac" *ngIf="wizards.firstName != null">
+          {{ wizards.firstName }}
+        </div>
+        <div>{{ wizards.lastName }}</div>
+      </div>
     </div>
   </div>
 </div>

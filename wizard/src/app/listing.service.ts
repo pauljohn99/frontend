@@ -21,7 +21,7 @@ export class ListingService {
   constructor(private httpClient: HttpClient) {}
 
   getElixir(): Observable<IElixir[]> {
-    return this.httpClient.get<IElixir[]>(this.baseUrl + '/Elixirs');
+    return this.httpClient.get<IElixir[]>(`${this.baseUrl}/Elixirs`);
   }
   getWizard(): Observable<IWizards[]> {
     return this.httpClient.get<IWizards[]>(`${this.baseUrl}/Wizards`);

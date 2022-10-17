@@ -129,3 +129,9 @@
   position: sticky;
   top: 0%;
 }
+.flex {
+  display: flex;
+}
+.spac {
+  padding-right: 7px;
+}

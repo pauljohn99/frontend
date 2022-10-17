@@ -14,7 +14,7 @@
   font-size: large;
   display: flex;
   align-items: center;
-  width: 200px;
+  min-width: 200px;
   font-weight: bold;
   justify-content: space-between;
   font-family: sans-serif;

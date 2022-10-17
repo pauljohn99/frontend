@@ -25,29 +25,37 @@ export class ListPageComponent implements OnInit {
       if (item['item'] === 'elixir') {
         this.listservice.getElixir().subscribe((list) => {
           this.listservice.elixir = list;
-          console.log(this.listservice.elixir);
           this.i = 1;
+          this.listservice.elixir?.sort((a, b) => (a.name > b.name ? 1 : -1));
         });
       } else if (item['item'] === 'spell') {
-        this.listservice
-          .getSpell()
-          .subscribe((list) => (this.listservice.spell = list));
-        this.i = 3;
+        this.listservice.getSpell().subscribe((list) => {
+          this.listservice.spell = list;
+          this.i = 3;
+          this.listservice.spell?.sort((a, b) => (a.name > b.name ? 1 : -1));
+        });
       } else if (item['item'] === 'ingredients') {
-        this.listservice
-          .getIngredients()
-          .subscribe((list) => (this.listservice.ingredient = list));
-        this.i = 2;
+        this.listservice.getIngredients().subscribe((list) => {
+          this.listservice.ingredient = list;
+          this.i = 2;
+          this.listservice.ingredient?.sort((a, b) =>
+            a.name > b.name ? 1 : -1
+          );
+        });
       } else if (item['item'] === 'wizard') {
-        this.listservice
-          .getWizard()
-          .subscribe((list) => (this.listservice.wizard = list));
-        this.i = 4;
+        this.listservice.getWizard().subscribe((list) => {
+          this.listservice.wizard = list;
+          this.i = 4;
+          this.listservice.wizard?.sort((a, b) =>
+            a.firstName > b.lastName ? 1 : -1
+          );
+        });
       } else if (item['item'] === 'house') {
-        this.listservice
-          .getHouse()
-          .subscribe((list) => (this.listservice.house = list));
-        this.i = 5;
+        this.listservice.getHouse().subscribe((list) => {
+          this.listservice.house = list;
+          this.i = 5;
+          this.listservice.house?.sort((a, b) => (a.name > b.name ? 1 : -1));
+        });
       }
     });
   }
